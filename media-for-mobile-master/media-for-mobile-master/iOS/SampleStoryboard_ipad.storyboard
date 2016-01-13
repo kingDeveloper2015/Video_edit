@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="1vO-3J-sLu">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Table View Controller-->
+        <scene sceneID="DRt-XF-11p">
+            <objects>
+                <tableViewController id="b8v-gO-nqx" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="IxC-y3-Y9i">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="nwQ-BB-FfD">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="VT6-ua-AMp">
+                                        <rect key="frame" x="0.0" y="64" width="768" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VT6-ua-AMp" id="t16-7N-V4H">
+                                            <rect key="frame" x="0.0" y="0.0" width="735" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Transcoder" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wna-zN-qja">
+                                                    <rect key="frame" x="20" y="11" width="86" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="fXI-cB-CFI" kind="push" id="D9n-Vv-BEl"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="6Ye-wl-D7z">
+                                        <rect key="frame" x="0.0" y="108" width="768" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6Ye-wl-D7z" id="bFs-Ng-QPA">
+                                            <rect key="frame" x="0.0" y="0.0" width="735" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Join Video" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kdq-nQ-uf4">
+                                                    <rect key="frame" x="20" y="11" width="81" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="kpf-Yd-sS7" kind="push" identifier="" id="BYo-NL-pNh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="JOS-ah-DdE">
+                                        <rect key="frame" x="0.0" y="152" width="768" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JOS-ah-DdE" id="AaG-cA-vdK">
+                                            <rect key="frame" x="0.0" y="0.0" width="735" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Video Cut" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MzJ-xk-wVt">
+                                                    <rect key="frame" x="20" y="11" width="76" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="CYa-B6-TPK" kind="push" id="FUT-mk-elD"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="rF5-Wk-YWG">
+                                        <rect key="frame" x="0.0" y="196" width="768" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rF5-Wk-YWG" id="64l-Uc-To9">
+                                            <rect key="frame" x="0.0" y="0.0" width="735" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Video Effects" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HCP-zy-SPz">
+                                                    <rect key="frame" x="20" y="11" width="101" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="JXt-CP-VHD" kind="push" id="rbB-EA-Vw6"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="b8v-gO-nqx" id="TUF-YF-hfi"/>
+                            <outlet property="delegate" destination="b8v-gO-nqx" id="VFB-x3-a0F"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="upW-ef-EHF"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eFe-hH-qae" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-331" y="-45"/>
+        </scene>
+        <!--Select Video-->
+        <scene sceneID="kKq-PI-AJ0">
+            <objects>
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="JhS-Q9-gNu" customClass="MPVideoLibraryViewController" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="WXg-Kw-A0W">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lZz-af-SiX">
+                            <size key="itemSize" width="100" height="100"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="VideoCell" id="e38-89-6wo" customClass="MPVideoLibraryCell">
+                                <rect key="frame" x="0.0" y="64" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vde-VN-KWd">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        </imageView>
+                                        <label clipsSubviews="YES" userInteractionEnabled="NO" tag="10" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K86-wK-dp5">
+                                            <rect key="frame" x="0.0" y="83" width="100" height="17"/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:07" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bfi-4s-5qh">
+                                            <rect key="frame" x="0.0" y="83" width="100" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="duration" destination="Bfi-4s-5qh" id="y5e-SU-cHs"/>
+                                    <outlet property="image" destination="vde-VN-KWd" id="DkA-yQ-aTK"/>
+                                    <outlet property="lable" destination="K86-wK-dp5" id="SxA-kZ-xOj"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="JhS-Q9-gNu" id="BdH-kB-l4x"/>
+                            <outlet property="delegate" destination="JhS-Q9-gNu" id="VEG-tN-KLt"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Select Video" id="pjG-Nb-u1h"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5b7-VI-1jH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3051" y="-45"/>
+        </scene>
+        <!--Video Cut-->
+        <scene sceneID="aFi-c4-oxQ">
+            <objects>
+                <viewController id="CYa-B6-TPK" customClass="MPVideoCutViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CvH-dt-VGS"/>
+                        <viewControllerLayoutGuide type="bottom" id="FCE-3f-LaY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1Zu-9K-FqG">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P1e-bb-yT4">
+                                <rect key="frame" x="84" y="120" width="600" height="400"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="3c3-IG-P5B"/>
+                                    <constraint firstAttribute="width" constant="600" id="Dut-pV-Gbs"/>
+                                </constraints>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6BS-fV-1Wj">
+                                <rect key="frame" x="0.0" y="978" width="768" height="2"/>
+                                <color key="trackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </progressView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" minValue="0.0" maxValue="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YYf-Ie-HD5">
+                                <rect key="frame" x="82" y="536" width="304" height="31"/>
+                                <color key="minimumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.5" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Tgz-T1-yXK">
+                                <rect key="frame" x="382" y="536" width="304" height="31"/>
+                                <color key="minimumTrackTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </slider>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E6i-Am-FyP">
+                                <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                                <items>
+                                    <barButtonItem enabled="NO" title="Start" id="XHK-UC-9gm">
+                                        <connections>
+                                            <action selector="startTranscode:" destination="CYa-B6-TPK" id="BUG-NH-WS7"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem enabled="NO" title="Stop" id="91m-Ya-Jmd">
+                                        <connections>
+                                            <action selector="stopTranscode:" destination="CYa-B6-TPK" id="FoT-Y6-Qb5"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="DGW-OB-gte"/>
+                                    <barButtonItem style="plain" id="IxZ-pM-GVi">
+                                        <view key="customView" contentMode="scaleToFill" id="1Fu-jN-0Eq">
+                                            <rect key="frame" x="583" y="6" width="169" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kQ0-iH-BXO">
+                                                    <rect key="frame" x="0.0" y="6" width="169" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="P1e-bb-yT4" firstAttribute="top" secondItem="1Zu-9K-FqG" secondAttribute="top" constant="120" id="2Pq-vz-WMa"/>
+                            <constraint firstAttribute="centerX" secondItem="P1e-bb-yT4" secondAttribute="centerX" id="BrR-KR-xCA"/>
+                            <constraint firstAttribute="trailing" secondItem="6BS-fV-1Wj" secondAttribute="trailing" id="CfY-Gl-Gez"/>
+                            <constraint firstItem="P1e-bb-yT4" firstAttribute="centerX" secondItem="YYf-Ie-HD5" secondAttribute="trailing" id="Evj-Fq-bz3"/>
+                            <constraint firstItem="6BS-fV-1Wj" firstAttribute="leading" secondItem="1Zu-9K-FqG" secondAttribute="leading" id="YZ1-WM-URV"/>
+                            <constraint firstItem="P1e-bb-yT4" firstAttribute="centerX" secondItem="Tgz-T1-yXK" secondAttribute="leading" id="h5b-3S-YJQ"/>
+                            <constraint firstItem="P1e-bb-yT4" firstAttribute="trailing" secondItem="Tgz-T1-yXK" secondAttribute="trailing" id="kQu-tJ-GLt"/>
+                            <constraint firstItem="FCE-3f-LaY" firstAttribute="top" secondItem="E6i-Am-FyP" secondAttribute="bottom" id="q0B-06-SxY"/>
+                            <constraint firstItem="YYf-Ie-HD5" firstAttribute="top" secondItem="P1e-bb-yT4" secondAttribute="bottom" constant="16" id="rBD-IX-yF4"/>
+                            <constraint firstItem="Tgz-T1-yXK" firstAttribute="top" secondItem="P1e-bb-yT4" secondAttribute="bottom" constant="16" id="sLb-27-FnW"/>
+                            <constraint firstItem="E6i-Am-FyP" firstAttribute="leading" secondItem="1Zu-9K-FqG" secondAttribute="leading" id="sXq-zt-PMh"/>
+                            <constraint firstItem="P1e-bb-yT4" firstAttribute="leading" secondItem="YYf-Ie-HD5" secondAttribute="leading" id="tfl-6o-EDw"/>
+                            <constraint firstAttribute="trailing" secondItem="E6i-Am-FyP" secondAttribute="trailing" id="vqp-vO-faE"/>
+                            <constraint firstItem="E6i-Am-FyP" firstAttribute="top" secondItem="6BS-fV-1Wj" secondAttribute="bottom" id="yN4-wO-h8e"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="a5b-Ib-eLC"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Video Cut" id="U6L-df-Lwk">
+                        <barButtonItem key="rightBarButtonItem" title="File" id="KCM-YS-50L">
+                            <connections>
+                                <segue destination="JhS-Q9-gNu" kind="push" identifier="filePickerCall" id="2i8-tO-2SV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="StartButton" destination="XHK-UC-9gm" id="oH7-gQ-khR"/>
+                        <outlet property="StopButton" destination="91m-Ya-Jmd" id="kzL-u8-pbm"/>
+                        <outlet property="fileButton" destination="KCM-YS-50L" id="sBl-zP-HFc"/>
+                        <outlet property="finishPoint" destination="Tgz-T1-yXK" id="yLu-2o-25W"/>
+                        <outlet property="imagePreview" destination="P1e-bb-yT4" id="hZ0-bw-zIt"/>
+                        <outlet property="progressBar" destination="6BS-fV-1Wj" id="CgA-z3-dYW"/>
+                        <outlet property="startPoint" destination="YYf-Ie-HD5" id="D6o-TY-t6r"/>
+                        <outlet property="statusBar" destination="kQ0-iH-BXO" id="LgY-8Z-G3h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lOc-e8-rtS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1902" y="621"/>
+        </scene>
+        <!--Join Video-->
+        <scene sceneID="13d-NP-UAC">
+            <objects>
+                <viewController id="kpf-Yd-sS7" customClass="MPJoinMovieViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J1b-Og-iGb"/>
+                        <viewControllerLayoutGuide type="bottom" id="TCz-C9-9MU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eq8-SX-c3p">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7Bw-CP-Byl">
+                                <rect key="frame" x="0.0" y="978" width="768" height="2"/>
+                                <color key="trackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </progressView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wvs-C2-lEv">
+                                <rect key="frame" x="34" y="94" width="500" height="281"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="55T-A9-NKI"/>
+                                    <constraint firstAttribute="width" secondItem="wvs-C2-lEv" secondAttribute="height" multiplier="16:9" id="vxd-7Z-jGh"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="71k-wI-HAx">
+                                <rect key="frame" x="234" y="405" width="500" height="281"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="71k-wI-HAx" secondAttribute="height" multiplier="16:9" id="6m7-jJ-iI7"/>
+                                    <constraint firstAttribute="width" constant="500" id="i3E-ye-ciR"/>
+                                </constraints>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ymn-gK-l0q">
+                                <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                                <items>
+                                    <barButtonItem enabled="NO" title="Start" id="GB6-Wg-uXN">
+                                        <connections>
+                                            <action selector="startTranscode:" destination="kpf-Yd-sS7" id="9Rj-0l-yQ6"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem enabled="NO" title="Stop" id="jNW-50-dOC">
+                                        <connections>
+                                            <action selector="stopTranscode:" destination="kpf-Yd-sS7" id="Nb1-RY-tpF"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="bO6-2Y-Q25"/>
+                                    <barButtonItem style="plain" id="nPZ-Qu-CsP">
+                                        <view key="customView" contentMode="scaleToFill" id="Bi0-bK-eDv">
+                                            <rect key="frame" x="583" y="6" width="169" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TZ7-CH-kOO">
+                                                    <rect key="frame" x="0.0" y="6" width="169" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7Bw-CP-Byl" secondAttribute="trailing" id="6c0-we-lrN"/>
+                            <constraint firstItem="Ymn-gK-l0q" firstAttribute="top" secondItem="7Bw-CP-Byl" secondAttribute="bottom" id="9a6-hJ-b8D"/>
+                            <constraint firstItem="Ymn-gK-l0q" firstAttribute="leading" secondItem="eq8-SX-c3p" secondAttribute="leading" id="HYW-s9-3qA"/>
+                            <constraint firstItem="7Bw-CP-Byl" firstAttribute="leading" secondItem="eq8-SX-c3p" secondAttribute="leading" id="Jbp-Ja-2dU"/>
+                            <constraint firstItem="wvs-C2-lEv" firstAttribute="top" secondItem="J1b-Og-iGb" secondAttribute="bottom" constant="30" id="KGC-N5-tH3"/>
+                            <constraint firstAttribute="trailing" secondItem="Ymn-gK-l0q" secondAttribute="trailing" id="Mty-Uf-foQ"/>
+                            <constraint firstItem="TCz-C9-9MU" firstAttribute="top" secondItem="Ymn-gK-l0q" secondAttribute="bottom" id="Sz7-vn-r0j"/>
+                            <constraint firstItem="71k-wI-HAx" firstAttribute="top" secondItem="wvs-C2-lEv" secondAttribute="bottom" constant="30" id="dlu-Yf-kCz"/>
+                            <constraint firstAttribute="centerX" secondItem="71k-wI-HAx" secondAttribute="centerX" constant="-100" id="n0b-lR-g3I"/>
+                            <constraint firstAttribute="centerX" secondItem="wvs-C2-lEv" secondAttribute="centerX" constant="100" id="xVX-ka-kpD"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem enabled="NO" title="Start" id="qeY-aI-lQc">
+                            <connections>
+                                <action selector="startTranscode:" destination="kpf-Yd-sS7" id="PvX-Ho-td6"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem enabled="NO" title="Stop" id="SFE-0F-jH0">
+                            <connections>
+                                <action selector="stopTranscode:" destination="kpf-Yd-sS7" id="s2Y-gt-PZs"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="sgg-Vs-8t2"/>
+                        <barButtonItem enabled="NO" title="Play" id="TEZ-Rm-Lew"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Join Video" id="NQK-fm-iot">
+                        <barButtonItem key="rightBarButtonItem" title="File" id="CwL-j5-yb8">
+                            <connections>
+                                <segue destination="JhS-Q9-gNu" kind="push" identifier="filePickerCall" id="azB-Zb-JSc"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="StartButton" destination="GB6-Wg-uXN" id="DYJ-WU-hRV"/>
+                        <outlet property="StopButton" destination="jNW-50-dOC" id="ggZ-H4-nJu"/>
+                        <outlet property="imageView1" destination="wvs-C2-lEv" id="Aqo-gm-cvF"/>
+                        <outlet property="imageView2" destination="71k-wI-HAx" id="qnj-C6-PZg"/>
+                        <outlet property="progressBar" destination="7Bw-CP-Byl" id="Y25-cI-iXe"/>
+                        <outlet property="statusBar" destination="TZ7-CH-kOO" id="jI9-lp-1Sr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e4D-Nz-Nc2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="864" y="-679"/>
+        </scene>
+        <!--Transcoder-->
+        <scene sceneID="B0J-QK-2c1">
+            <objects>
+                <viewController id="fXI-cB-CFI" customClass="MPTranscoderViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Dbx-vs-pwm"/>
+                        <viewControllerLayoutGuide type="bottom" id="h3x-yt-Dfm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cyq-54-mc9">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U81-Od-env">
+                                <rect key="frame" x="84" y="120" width="600" height="350"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="Bdf-0r-a2i"/>
+                                    <constraint firstAttribute="width" constant="600" id="Khp-MV-uJt"/>
+                                </constraints>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Zr6-Fv-JQ0">
+                                <rect key="frame" x="0.0" y="978" width="768" height="2"/>
+                                <color key="trackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </progressView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oD5-w1-qDh">
+                                <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                                <items>
+                                    <barButtonItem enabled="NO" title="Start" id="S7y-Ex-hl1">
+                                        <connections>
+                                            <action selector="startTranscode:" destination="fXI-cB-CFI" id="bFV-sa-72r"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem enabled="NO" title="Stop" id="hZm-Nc-zso">
+                                        <connections>
+                                            <action selector="stopTranscode:" destination="fXI-cB-CFI" id="wEu-qA-jgQ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Wwd-Mb-eIo"/>
+                                    <barButtonItem style="plain" id="YVq-MI-M7X">
+                                        <view key="customView" contentMode="scaleToFill" id="7v4-Bf-xt3">
+                                            <rect key="frame" x="583" y="6" width="169" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CA5-ba-WrK">
+                                                    <rect key="frame" x="0.0" y="6" width="169" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Zr6-Fv-JQ0" firstAttribute="leading" secondItem="Cyq-54-mc9" secondAttribute="leading" id="5Pg-xt-Y40"/>
+                            <constraint firstItem="oD5-w1-qDh" firstAttribute="top" secondItem="Zr6-Fv-JQ0" secondAttribute="bottom" id="7Dr-0O-ZnM"/>
+                            <constraint firstAttribute="trailing" secondItem="Zr6-Fv-JQ0" secondAttribute="trailing" id="7Ti-KJ-SR9"/>
+                            <constraint firstItem="oD5-w1-qDh" firstAttribute="leading" secondItem="Cyq-54-mc9" secondAttribute="leading" id="GJr-JZ-ihe"/>
+                            <constraint firstAttribute="trailing" secondItem="oD5-w1-qDh" secondAttribute="trailing" id="RnK-SC-Osl"/>
+                            <constraint firstAttribute="centerX" secondItem="U81-Od-env" secondAttribute="centerX" id="Tq0-ek-bvn"/>
+                            <constraint firstItem="h3x-yt-Dfm" firstAttribute="top" secondItem="oD5-w1-qDh" secondAttribute="bottom" id="gw6-2Z-QfR"/>
+                            <constraint firstItem="U81-Od-env" firstAttribute="top" secondItem="Cyq-54-mc9" secondAttribute="top" constant="120" id="zZP-sb-dXW"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Transcoder" id="wqM-Db-Mrd">
+                        <barButtonItem key="rightBarButtonItem" title="File" id="EHr-Lb-GSz">
+                            <connections>
+                                <segue destination="JhS-Q9-gNu" kind="push" identifier="filePickerCall" id="uuB-rE-vbB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="ImagePreview" destination="U81-Od-env" id="OFm-0G-Shw"/>
+                        <outlet property="StartButton" destination="S7y-Ex-hl1" id="L97-8q-M5q"/>
+                        <outlet property="StopButton" destination="hZm-Nc-zso" id="1Wd-sG-w5f"/>
+                        <outlet property="fileButton" destination="EHr-Lb-GSz" id="zFS-qr-jmy"/>
+                        <outlet property="progressBar" destination="Zr6-Fv-JQ0" id="1K8-nK-f9n"/>
+                        <outlet property="statusBar" destination="CA5-ba-WrK" id="LCt-0F-CIA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="asg-7U-SXj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="864" y="621"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FCw-6d-lxo">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="1vO-3J-sLu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AK3-CT-Cve">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="OnS-HM-Iwv">
+                        <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="b8v-gO-nqx" kind="relationship" relationship="rootViewController" id="1Ya-Nn-zGv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tj5-dm-wFa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1307" y="-45"/>
+        </scene>
+        <!--Video Effects-->
+        <scene sceneID="yoR-8x-ucx">
+            <objects>
+                <viewController id="JXt-CP-VHD" customClass="MPEffectsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nSE-qs-L3r"/>
+                        <viewControllerLayoutGuide type="bottom" id="QtZ-Na-mbX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7nS-nn-log">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cga-me-ry3">
+                                <rect key="frame" x="0.0" y="978" width="768" height="2"/>
+                                <color key="trackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </progressView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="70h-6K-dif">
+                                <rect key="frame" x="224" y="500" width="320" height="216"/>
+                            </pickerView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DqN-Oq-X0i">
+                                <rect key="frame" x="134" y="120" width="500" height="350"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="500" id="H6H-Qo-Bm6"/>
+                                    <constraint firstAttribute="height" constant="350" id="yNh-xE-fSE"/>
+                                </constraints>
+                            </imageView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tte-mR-WN9">
+                                <rect key="frame" x="0.0" y="980" width="768" height="44"/>
+                                <items>
+                                    <barButtonItem enabled="NO" title="Start" id="PPT-5Z-p1u">
+                                        <connections>
+                                            <action selector="startTranscode:" destination="JXt-CP-VHD" id="IFX-in-gc8"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem enabled="NO" title="Stop" id="fFy-WE-6bp">
+                                        <connections>
+                                            <action selector="stopTranscode:" destination="JXt-CP-VHD" id="jTW-tw-AUz"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="RSO-P3-Wwd"/>
+                                    <barButtonItem style="plain" id="6ZQ-r4-eP6">
+                                        <view key="customView" contentMode="scaleToFill" id="u9e-og-2CP">
+                                            <rect key="frame" x="583" y="6" width="169" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fiY-Nh-6pK">
+                                                    <rect key="frame" x="0.0" y="6" width="169" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cga-me-ry3" secondAttribute="trailing" id="67K-P4-KBA"/>
+                            <constraint firstItem="QtZ-Na-mbX" firstAttribute="top" secondItem="Tte-mR-WN9" secondAttribute="bottom" id="6fe-ft-kU8"/>
+                            <constraint firstItem="DqN-Oq-X0i" firstAttribute="top" secondItem="7nS-nn-log" secondAttribute="top" constant="120" id="9Re-Rs-qwQ"/>
+                            <constraint firstAttribute="centerX" secondItem="70h-6K-dif" secondAttribute="centerX" id="RJb-9d-NVB"/>
+                            <constraint firstItem="Tte-mR-WN9" firstAttribute="top" secondItem="cga-me-ry3" secondAttribute="bottom" id="SVg-ie-5z8"/>
+                            <constraint firstItem="Tte-mR-WN9" firstAttribute="leading" secondItem="7nS-nn-log" secondAttribute="leading" id="a0w-Wf-nc3"/>
+                            <constraint firstItem="cga-me-ry3" firstAttribute="leading" secondItem="7nS-nn-log" secondAttribute="leading" id="pcr-kV-29h"/>
+                            <constraint firstAttribute="centerX" secondItem="DqN-Oq-X0i" secondAttribute="centerX" id="t6R-qh-KPj"/>
+                            <constraint firstItem="70h-6K-dif" firstAttribute="top" secondItem="DqN-Oq-X0i" secondAttribute="bottom" constant="30" id="vwh-I9-NCr"/>
+                            <constraint firstAttribute="trailing" secondItem="Tte-mR-WN9" secondAttribute="trailing" id="y7M-zA-xT7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Video Effects" id="uTi-o7-E75">
+                        <barButtonItem key="rightBarButtonItem" title="File" id="cnI-wx-d0S">
+                            <connections>
+                                <segue destination="JhS-Q9-gNu" kind="push" identifier="filePickerCall" id="peN-ER-HVj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="ImagePreview" destination="DqN-Oq-X0i" id="NzF-tQ-lKe"/>
+                        <outlet property="StartButton" destination="PPT-5Z-p1u" id="EzQ-cT-bgV"/>
+                        <outlet property="StopButton" destination="fFy-WE-6bp" id="iut-BJ-ikY"/>
+                        <outlet property="effectsList" destination="70h-6K-dif" id="App-6t-fVB"/>
+                        <outlet property="fileButton" destination="cnI-wx-d0S" id="Myt-5e-ARp"/>
+                        <outlet property="progressBar" destination="cga-me-ry3" id="1yC-AE-VJS"/>
+                        <outlet property="statusBar" destination="fiY-Nh-6pK" id="ZU5-qa-h3A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RMS-DQ-djN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1902" y="-679"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="azB-Zb-JSc"/>
+    </inferredMetricsTieBreakers>
+</document>

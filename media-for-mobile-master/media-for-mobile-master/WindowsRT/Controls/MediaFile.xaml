@@ -1,0 +1,77 @@
+﻿<UserControl
+    x:Class="Samples.Controls.MediaFile"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Samples.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:PlayerFramework="using:Microsoft.PlayerFramework"
+    xmlns:Controls="using:Samples.Controls"
+    mc:Ignorable="d"    
+    d:DesignHeight="200"
+    d:DesignWidth="200">
+
+    <Canvas x:Name="ParentCanvas">
+        
+        <PlayerFramework:MediaPlayer x:Name="Preview" Margin="0" 
+                                        Width="{Binding ElementName=ParentCanvas, Path=ActualWidth}"
+                                        Height="{Binding ElementName=ParentCanvas, Path=ActualHeight}"/>
+
+        <StackPanel Orientation="Horizontal">
+            <AppBarButton x:Name="Open" Icon="OpenLocal" Label="Pick Video" Click="OnPickVideo"/>
+
+            <AppBarButton x:Name="Info" Label="File Info" Visibility="Collapsed">
+                <AppBarButton.Icon>
+                    <FontIcon FontFamily="Segoe UI Symbol" Glyph="&#xE2C0;"/>
+                </AppBarButton.Icon>
+                <AppBarButton.Flyout>
+                    <Flyout>
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel Orientation="Vertical" Margin="12,12,32,12">
+                                <TextBlock Style="{StaticResource SubheaderTextBlockStyle}">VIDEO</TextBlock>
+
+                                <TextBlock Style="{StaticResource TitleTextBlockStyle}" Margin="4,12,0,8">Codec:</TextBlock>
+                                <TextBlock x:Name="VideoCodecText" Style="{StaticResource BodyTextBlockStyle}" Margin="4,2"/>
+                                
+                                <TextBlock Style="{StaticResource TitleTextBlockStyle}" Margin="4,12,0,8">Resolution</TextBlock>
+                                <TextBlock x:Name="ResolutionText" Style="{StaticResource BodyTextBlockStyle}" Margin="4,2"/>
+
+                                <TextBlock Style="{StaticResource TitleTextBlockStyle}" Margin="4,12,0,8">Framerate</TextBlock>
+                                <TextBlock x:Name="FramerateText" Style="{StaticResource BodyTextBlockStyle}" Margin="4,2"/>
+
+                                <TextBlock Style="{StaticResource TitleTextBlockStyle}" Margin="4,12,0,8">Bitrate</TextBlock>
+                                <TextBlock x:Name="BitrateVideoText" Style="{StaticResource BodyTextBlockStyle}" Margin="4,2"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Vertical" Margin="32,12,12,12">
+                                <TextBlock Style="{StaticResource SubheaderTextBlockStyle}">AUDIO</TextBlock>
+
+                                <TextBlock Style="{StaticResource TitleTextBlockStyle}" Margin="4,12,0,8">Codec:</TextBlock>
+                                <TextBlock x:Name="AudioCodecText" Style="{StaticResource BodyTextBlockStyle}" Margin="4,2"/>
+                                
+                                <TextBlock Style="{StaticResource TitleTextBlockStyle}" Margin="4,12,0,8">Channels</TextBlock>
+                                <TextBlock x:Name="ChannelsText" Style="{StaticResource BodyTextBlockStyle}" Margin="4,2"/>
+
+                                <TextBlock Style="{StaticResource TitleTextBlockStyle}" Margin="4,12,0,8">Sample Rate</TextBlock>
+                                <TextBlock x:Name="SamplerateText" Style="{StaticResource BodyTextBlockStyle}" Margin="4,2"/>
+
+                                <TextBlock Style="{StaticResource TitleTextBlockStyle}" Margin="4,12,0,8">Bits Per Sample</TextBlock>
+                                <TextBlock x:Name="BitspersampleText" Style="{StaticResource BodyTextBlockStyle}" Margin="4,2"/>
+
+                                <TextBlock Style="{StaticResource TitleTextBlockStyle}" Margin="4,12,0,8">Bitrate</TextBlock>
+                                <TextBlock x:Name="BitrateAudioText" Style="{StaticResource BodyTextBlockStyle}" Margin="4,2"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Flyout>
+                </AppBarButton.Flyout>
+            </AppBarButton>
+        </StackPanel>
+
+        <Controls:RangeSelector x:Name="SegmentSelector" Width="0"
+                                Height="20"
+                                HorizontalAlignment="Center"
+                                Canvas.ZIndex="100"
+                                Visibility="Collapsed"/>
+    </Canvas>
+
+</UserControl>

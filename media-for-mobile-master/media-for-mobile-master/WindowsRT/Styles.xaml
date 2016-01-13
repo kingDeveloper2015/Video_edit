@@ -1,0 +1,11 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Samples">
+
+    <SolidColorBrush x:Key="IntelBlue" Color="#FF0071C5"/>
+    <SolidColorBrush x:Key="IntelDarkBlue" Color="#FF004280"/>
+    <SolidColorBrush x:Key="IntelLightGray" Color="#FFB1BABF"/>
+    <SolidColorBrush x:Key="IntelDarkGray" Color="#FF53565A"/>
+    
+</ResourceDictionary>

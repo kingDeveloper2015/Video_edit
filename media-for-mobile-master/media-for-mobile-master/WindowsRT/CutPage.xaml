@@ -1,0 +1,115 @@
+﻿<common:BasePage
+    x:Name="pageRoot"
+    x:Class="Samples.CutPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Controls="using:Samples.Controls"
+    xmlns:common="using:Samples.Common"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="1">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Canvas x:Name="ParentCanvas" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.Column="0" Grid.Row="0">
+
+                <Controls:MediaFile x:Name="Preview" Margin="0" 
+                                Width="{Binding ElementName=ParentCanvas, Path=ActualWidth}"
+                                Height="{Binding ElementName=ParentCanvas, Path=ActualHeight}"/>
+
+                <Grid x:Name="ProgressParent" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center"
+                    Width="{Binding ElementName=ParentCanvas, Path=ActualWidth}"
+                    Height="{Binding ElementName=ParentCanvas, Path=ActualHeight}"
+                    Canvas.ZIndex="10"
+                    Visibility="Collapsed">
+
+                    <Controls:ProgressButton x:Name="Progress" Width="200" Height="200" 
+                                         StrokeThickness="8" 
+                                         Value="50"/>
+                </Grid>
+            </Canvas>
+
+            <AppBar IsSticky="True" IsOpen="True" Grid.Column="0" Grid.Row="1" Background="{StaticResource IntelBlue}">
+                <StackPanel Orientation="Horizontal">
+
+                    <AppBarButton x:Name="Setting" Icon="Setting" Label="Options">
+                        <AppBarButton.Flyout>
+                            <Flyout>
+                                <StackPanel Orientation="Vertical">
+                                    <TextBlock Style="{StaticResource SubheaderTextBlockStyle}">VIDEO</TextBlock>
+
+                                    <TextBlock Style="{StaticResource TitleTextBlockStyle}" Margin="4,12,0,8">Resolution</TextBlock>
+                                    <ComboBox Margin="4,2" x:Name="ProfileSelect" HorizontalAlignment="Left" Width="180" Height="Auto" SelectedIndex="2" >
+                                        <ComboBoxItem Name="ComboBoxItem_1080p" Content="1080p (1920x1080)"/>
+                                        <ComboBoxItem Name="ComboBoxItem_720p" Content="720p (1280x720)"/>
+                                        <ComboBoxItem Name="ComboBoxItem_WVGA" Content="WVGA (800x480)"/>
+                                        <ComboBoxItem Name="ComboBoxItem_NTSC" Content="NTSC (720x480)"/>
+                                        <ComboBoxItem Name="ComboBoxItem_PAL" Content="PAL (720x576)"/>
+                                        <ComboBoxItem Name="ComboBoxItem_VGA" Content="VGA (640x480)"/>
+                                        <ComboBoxItem Name="ComboBoxItem_QVGA" Content="QVGA (320x240)"/>
+                                    </ComboBox>
+
+                                    <TextBlock Style="{StaticResource TitleTextBlockStyle}" Margin="4,12,0,8">Framerate</TextBlock>
+                                    <ComboBox Margin="4,2" x:Name="FramerateSelect" HorizontalAlignment="Left" Width="180" Height="Auto" SelectedIndex="0" >
+                                        <ComboBoxItem Content="30"/>
+                                        <ComboBoxItem Content="60"/>
+                                    </ComboBox>
+
+                                    <TextBlock Style="{StaticResource TitleTextBlockStyle}" Margin="4,12,0,0">Bitrate</TextBlock>
+                                    <Slider x:Name="BitrateSelect" Minimum="1000" Maximum="5000" Value="5000"></Slider>
+
+                                </StackPanel>
+                            </Flyout>
+                        </AppBarButton.Flyout>
+                    </AppBarButton>
+                    <AppBarButton x:Name="Transcode" Icon="Trim" Label="Cut" Click="OnTranscode"/>
+
+                </StackPanel>
+            </AppBar>
+
+        </Grid>
+
+        <Grid Background="{StaticResource IntelBlue}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="backButton" Margin="29,59,39,0" Command="{Binding NavigationHelper.GoBackCommand, ElementName=pageRoot}"
+                        Style="{StaticResource NavigationBackButtonNormalStyle}"
+                        VerticalAlignment="Top"
+                        AutomationProperties.Name="Back"
+                        AutomationProperties.AutomationId="BackButton"
+                        AutomationProperties.ItemType="Navigation Button"/>
+            
+            <TextBlock x:Name="pageTitle" x:Uid="Cut_Video" Text="" Style="{StaticResource HeaderTextBlockStyle}" Grid.Column="1" 
+                        IsHitTestVisible="false" TextWrapping="NoWrap" VerticalAlignment="Bottom" Margin="0,0,30,40"/>
+
+            <Image x:Name="imgAppLogo" Margin="0,0,40,0" Grid.Column="1" HorizontalAlignment="Right" Width="234" Height="100" VerticalAlignment="Center" 
+                   Source="Assets/intel_logo_white.png"/>
+            
+        </Grid>
+    </Grid>
+</common:BasePage>

@@ -1,0 +1,368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0103D16B19C1DA6200D278FA /* VideoEffect.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0103D16919C1DA6200D278FA /* VideoEffect.mm */; };
+		0103D16C19C1DA6200D278FA /* VideoEffectImpl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0103D16A19C1DA6200D278FA /* VideoEffectImpl.mm */; };
+		0103D17419C1E90500D278FA /* MPGLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 0103D17119C1E90500D278FA /* MPGLProgram.m */; };
+		0103D17519C1E90500D278FA /* MPLinearVideoEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 0103D17319C1E90500D278FA /* MPLinearVideoEffect.m */; };
+		0103D17819C1EEC100D278FA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0103D17719C1EEC100D278FA /* CoreGraphics.framework */; };
+		01135D58198993390026FE29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01135D57198993390026FE29 /* Foundation.framework */; };
+		0126313F198BB39900635DC8 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0126313E198BB39900635DC8 /* AssetsLibrary.framework */; };
+		014BCE83199029F20052AFE0 /* IProgressListener.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 014BCE6E199029B40052AFE0 /* IProgressListener.h */; };
+		014BCE84199029F20052AFE0 /* MediaComposer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 014BCE6F199029B40052AFE0 /* MediaComposer.h */; };
+		014BCE87199029F20052AFE0 /* MediaPackPointer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 014BCE72199029B40052AFE0 /* MediaPackPointer.h */; };
+		014BCE89199029F20052AFE0 /* VideoFormat.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 014BCE74199029B40052AFE0 /* VideoFormat.h */; };
+		015823A6199A278D00579FC9 /* no_copy.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01422106199A24690032D1D9 /* no_copy.h */; };
+		015823A7199A278D00579FC9 /* ProgressListener.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01422107199A24690032D1D9 /* ProgressListener.h */; };
+		015823A8199A278D00579FC9 /* Resolution.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01422108199A24690032D1D9 /* Resolution.h */; };
+		015823A9199A278D00579FC9 /* TimeStamp.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01422109199A24690032D1D9 /* TimeStamp.h */; };
+		01824C5019A5FECF00FF125E /* AudioFormat.mm in Sources */ = {isa = PBXBuildFile; fileRef = 01824C4F19A5FECF00FF125E /* AudioFormat.mm */; };
+		019AA8341998C497007C3A24 /* MediaComposer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 019AA82D1998C497007C3A24 /* MediaComposer.mm */; };
+		019AA8351998C497007C3A24 /* MediaComposerImpl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 019AA82F1998C497007C3A24 /* MediaComposerImpl.mm */; };
+		019AA8361998C497007C3A24 /* VideoFormat.mm in Sources */ = {isa = PBXBuildFile; fileRef = 019AA8301998C497007C3A24 /* VideoFormat.mm */; };
+		019AA8371998C497007C3A24 /* VideoFormatImpl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 019AA8321998C497007C3A24 /* VideoFormatImpl.mm */; };
+		01E9C84E19BDFB6F0098AE15 /* MediaFileImpl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 01E9C84D19BDFB6F0098AE15 /* MediaFileImpl.mm */; };
+		01E9C85119BE13D30098AE15 /* MediaFile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01F6344F19B8731500E26D9D /* MediaFile.h */; };
+		01E9C85219BE13DA0098AE15 /* AudioFormat.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 011A1FBD19A5F9A700A8E473 /* AudioFormat.h */; };
+		01FA1A8C19A663530033C8B6 /* AudioFormatImpl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 019AA82C1998C497007C3A24 /* AudioFormatImpl.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		01135D52198993390026FE29 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "include/MediaPackC++";
+			dstSubfolderSpec = 16;
+			files = (
+				01E9C85219BE13DA0098AE15 /* AudioFormat.h in CopyFiles */,
+				01E9C85119BE13D30098AE15 /* MediaFile.h in CopyFiles */,
+				015823A6199A278D00579FC9 /* no_copy.h in CopyFiles */,
+				015823A7199A278D00579FC9 /* ProgressListener.h in CopyFiles */,
+				015823A8199A278D00579FC9 /* Resolution.h in CopyFiles */,
+				015823A9199A278D00579FC9 /* TimeStamp.h in CopyFiles */,
+				014BCE83199029F20052AFE0 /* IProgressListener.h in CopyFiles */,
+				014BCE84199029F20052AFE0 /* MediaComposer.h in CopyFiles */,
+				014BCE87199029F20052AFE0 /* MediaPackPointer.h in CopyFiles */,
+				014BCE89199029F20052AFE0 /* VideoFormat.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0103D16819C1DA6200D278FA /* VideoEffectImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoEffectImpl.h; sourceTree = SOURCE_ROOT; };
+		0103D16919C1DA6200D278FA /* VideoEffect.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VideoEffect.mm; sourceTree = SOURCE_ROOT; };
+		0103D16A19C1DA6200D278FA /* VideoEffectImpl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VideoEffectImpl.mm; sourceTree = SOURCE_ROOT; };
+		0103D17019C1E90500D278FA /* MPGLProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPGLProgram.h; sourceTree = SOURCE_ROOT; };
+		0103D17119C1E90500D278FA /* MPGLProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPGLProgram.m; sourceTree = SOURCE_ROOT; };
+		0103D17219C1E90500D278FA /* MPLinearVideoEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPLinearVideoEffect.h; sourceTree = SOURCE_ROOT; };
+		0103D17319C1E90500D278FA /* MPLinearVideoEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPLinearVideoEffect.m; sourceTree = SOURCE_ROOT; };
+		0103D17719C1EEC100D278FA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		01135D54198993390026FE29 /* libMediaPackC++.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libMediaPackC++.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		01135D57198993390026FE29 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		011A1FBD19A5F9A700A8E473 /* AudioFormat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AudioFormat.h; path = ../AudioFormat.h; sourceTree = SOURCE_ROOT; };
+		011A1FBF19A5F9C200A8E473 /* VideoEffect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = VideoEffect.h; path = ../VideoEffect.h; sourceTree = SOURCE_ROOT; };
+		0126313E198BB39900635DC8 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		0126315A198BB82500635DC8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		01422106199A24690032D1D9 /* no_copy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = no_copy.h; path = ../no_copy.h; sourceTree = SOURCE_ROOT; };
+		01422107199A24690032D1D9 /* ProgressListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProgressListener.h; path = ../ProgressListener.h; sourceTree = SOURCE_ROOT; };
+		01422108199A24690032D1D9 /* Resolution.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Resolution.h; path = ../Resolution.h; sourceTree = SOURCE_ROOT; };
+		01422109199A24690032D1D9 /* TimeStamp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimeStamp.h; path = ../TimeStamp.h; sourceTree = SOURCE_ROOT; };
+		014BCE6E199029B40052AFE0 /* IProgressListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IProgressListener.h; path = ../IProgressListener.h; sourceTree = SOURCE_ROOT; };
+		014BCE6F199029B40052AFE0 /* MediaComposer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MediaComposer.h; path = ../MediaComposer.h; sourceTree = SOURCE_ROOT; };
+		014BCE72199029B40052AFE0 /* MediaPackPointer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MediaPackPointer.h; path = ../MediaPackPointer.h; sourceTree = SOURCE_ROOT; };
+		014BCE74199029B40052AFE0 /* VideoFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VideoFormat.h; path = ../VideoFormat.h; sourceTree = SOURCE_ROOT; };
+		01824C4F19A5FECF00FF125E /* AudioFormat.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioFormat.mm; sourceTree = SOURCE_ROOT; };
+		019AA82B1998C497007C3A24 /* AudioFormatImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioFormatImpl.h; sourceTree = SOURCE_ROOT; };
+		019AA82C1998C497007C3A24 /* AudioFormatImpl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AudioFormatImpl.mm; sourceTree = SOURCE_ROOT; };
+		019AA82D1998C497007C3A24 /* MediaComposer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MediaComposer.mm; sourceTree = SOURCE_ROOT; };
+		019AA82E1998C497007C3A24 /* MediaComposerImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaComposerImpl.h; sourceTree = SOURCE_ROOT; };
+		019AA82F1998C497007C3A24 /* MediaComposerImpl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MediaComposerImpl.mm; sourceTree = SOURCE_ROOT; };
+		019AA8301998C497007C3A24 /* VideoFormat.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VideoFormat.mm; sourceTree = SOURCE_ROOT; };
+		019AA8311998C497007C3A24 /* VideoFormatImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoFormatImpl.h; sourceTree = SOURCE_ROOT; };
+		019AA8321998C497007C3A24 /* VideoFormatImpl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VideoFormatImpl.mm; sourceTree = SOURCE_ROOT; };
+		01E9C84C19BDFB6F0098AE15 /* MediaFileImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaFileImpl.h; sourceTree = SOURCE_ROOT; };
+		01E9C84D19BDFB6F0098AE15 /* MediaFileImpl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MediaFileImpl.mm; sourceTree = SOURCE_ROOT; };
+		01F6344F19B8731500E26D9D /* MediaFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MediaFile.h; path = ../MediaFile.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01135D51198993390026FE29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0103D17819C1EEC100D278FA /* CoreGraphics.framework in Frameworks */,
+				0126313F198BB39900635DC8 /* AssetsLibrary.framework in Frameworks */,
+				01135D58198993390026FE29 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01135D4B198993390026FE29 = {
+			isa = PBXGroup;
+			children = (
+				01135D59198993390026FE29 /* MediaPackC++ */,
+				01135D56198993390026FE29 /* Frameworks */,
+				01135D55198993390026FE29 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01135D55198993390026FE29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01135D54198993390026FE29 /* libMediaPackC++.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01135D56198993390026FE29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0103D17719C1EEC100D278FA /* CoreGraphics.framework */,
+				0126315A198BB82500635DC8 /* UIKit.framework */,
+				0126313E198BB39900635DC8 /* AssetsLibrary.framework */,
+				01135D57198993390026FE29 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		01135D59198993390026FE29 /* MediaPackC++ */ = {
+			isa = PBXGroup;
+			children = (
+				01F6344F19B8731500E26D9D /* MediaFile.h */,
+				011A1FBF19A5F9C200A8E473 /* VideoEffect.h */,
+				011A1FBD19A5F9A700A8E473 /* AudioFormat.h */,
+				014BCE74199029B40052AFE0 /* VideoFormat.h */,
+				01422107199A24690032D1D9 /* ProgressListener.h */,
+				01422108199A24690032D1D9 /* Resolution.h */,
+				01422109199A24690032D1D9 /* TimeStamp.h */,
+				014BCE6E199029B40052AFE0 /* IProgressListener.h */,
+				014BCE6F199029B40052AFE0 /* MediaComposer.h */,
+				014BCE72199029B40052AFE0 /* MediaPackPointer.h */,
+				01422106199A24690032D1D9 /* no_copy.h */,
+				0126315F198BC98800635DC8 /* Source */,
+			);
+			name = "MediaPackC++";
+			path = MPWrapper;
+			sourceTree = "<group>";
+		};
+		0126315F198BC98800635DC8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0103D17019C1E90500D278FA /* MPGLProgram.h */,
+				0103D17119C1E90500D278FA /* MPGLProgram.m */,
+				0103D17219C1E90500D278FA /* MPLinearVideoEffect.h */,
+				0103D17319C1E90500D278FA /* MPLinearVideoEffect.m */,
+				0103D16919C1DA6200D278FA /* VideoEffect.mm */,
+				0103D16819C1DA6200D278FA /* VideoEffectImpl.h */,
+				0103D16A19C1DA6200D278FA /* VideoEffectImpl.mm */,
+				01E9C84C19BDFB6F0098AE15 /* MediaFileImpl.h */,
+				01E9C84D19BDFB6F0098AE15 /* MediaFileImpl.mm */,
+				01824C4F19A5FECF00FF125E /* AudioFormat.mm */,
+				019AA82B1998C497007C3A24 /* AudioFormatImpl.h */,
+				019AA82C1998C497007C3A24 /* AudioFormatImpl.mm */,
+				019AA82D1998C497007C3A24 /* MediaComposer.mm */,
+				019AA82E1998C497007C3A24 /* MediaComposerImpl.h */,
+				019AA82F1998C497007C3A24 /* MediaComposerImpl.mm */,
+				019AA8301998C497007C3A24 /* VideoFormat.mm */,
+				019AA8311998C497007C3A24 /* VideoFormatImpl.h */,
+				019AA8321998C497007C3A24 /* VideoFormatImpl.mm */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01135D53198993390026FE29 /* MediaPackC++ */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01135D77198993390026FE29 /* Build configuration list for PBXNativeTarget "MediaPackC++" */;
+			buildPhases = (
+				01135D50198993390026FE29 /* Sources */,
+				01135D51198993390026FE29 /* Frameworks */,
+				01135D52198993390026FE29 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MediaPackC++";
+			productName = MPWrapper;
+			productReference = 01135D54198993390026FE29 /* libMediaPackC++.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01135D4C198993390026FE29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Intel Corporation";
+			};
+			buildConfigurationList = 01135D4F198993390026FE29 /* Build configuration list for PBXProject "MediaPackC++" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 01135D4B198993390026FE29;
+			productRefGroup = 01135D55198993390026FE29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01135D53198993390026FE29 /* MediaPackC++ */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01135D50198993390026FE29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0103D17419C1E90500D278FA /* MPGLProgram.m in Sources */,
+				0103D16C19C1DA6200D278FA /* VideoEffectImpl.mm in Sources */,
+				01FA1A8C19A663530033C8B6 /* AudioFormatImpl.mm in Sources */,
+				01824C5019A5FECF00FF125E /* AudioFormat.mm in Sources */,
+				0103D16B19C1DA6200D278FA /* VideoEffect.mm in Sources */,
+				019AA8351998C497007C3A24 /* MediaComposerImpl.mm in Sources */,
+				019AA8341998C497007C3A24 /* MediaComposer.mm in Sources */,
+				019AA8361998C497007C3A24 /* VideoFormat.mm in Sources */,
+				019AA8371998C497007C3A24 /* VideoFormatImpl.mm in Sources */,
+				01E9C84E19BDFB6F0098AE15 /* MediaFileImpl.mm in Sources */,
+				0103D17519C1E90500D278FA /* MPLinearVideoEffect.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		01135D75198993390026FE29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		01135D76198993390026FE29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01135D78198993390026FE29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MPWrapper.dst;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "MediaPackC++";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		01135D79198993390026FE29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MPWrapper.dst;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "MediaPackC++";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01135D4F198993390026FE29 /* Build configuration list for PBXProject "MediaPackC++" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01135D75198993390026FE29 /* Debug */,
+				01135D76198993390026FE29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01135D77198993390026FE29 /* Build configuration list for PBXNativeTarget "MediaPackC++" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01135D78198993390026FE29 /* Debug */,
+				01135D79198993390026FE29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01135D4C198993390026FE29 /* Project object */;
+}

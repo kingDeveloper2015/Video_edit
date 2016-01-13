@@ -1,0 +1,405 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		011AC20219B660E900B0A6AD /* SampleStoryboard_ipad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 011AC20119B660E900B0A6AD /* SampleStoryboard_ipad.storyboard */; };
+		0135304719ADFEB8002BE756 /* MPEffectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0135304619ADFEB8002BE756 /* MPEffectsViewController.m */; };
+		0162E7BC193771A600745653 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0162E7BB193771A600745653 /* Foundation.framework */; };
+		0162E7BE193771A600745653 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0162E7BD193771A600745653 /* CoreGraphics.framework */; };
+		0162E7C0193771A600745653 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0162E7BF193771A600745653 /* UIKit.framework */; };
+		0162E7C6193771A600745653 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0162E7C4193771A600745653 /* InfoPlist.strings */; };
+		0162E7C8193771A600745653 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0162E7C7193771A600745653 /* main.m */; };
+		0162E7CC193771A600745653 /* MPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0162E7CB193771A600745653 /* MPAppDelegate.m */; };
+		0162E7CE193771A600745653 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0162E7CD193771A600745653 /* Images.xcassets */; };
+		0162E7EB1937748300745653 /* SampleStoryboard_iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0162E7EA1937748300745653 /* SampleStoryboard_iphone.storyboard */; };
+		0167A8C819AFAA93004E1409 /* MPSampleBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0167A8C719AFAA93004E1409 /* MPSampleBaseViewController.m */; };
+		0179FEB319B4AC5300DA2643 /* MPVideoLibraryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0179FEB219B4AC5300DA2643 /* MPVideoLibraryViewController.m */; };
+		018950101940E26D00DC84CD /* MPJoinMovieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0189500F1940E26D00DC84CD /* MPJoinMovieViewController.m */; };
+		01A11E5E19B0AB0700267788 /* MPPickerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A11E5D19B0AB0700267788 /* MPPickerUtil.m */; };
+		01C57123195AD248003810FC /* MPVideoCutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C57122195AD248003810FC /* MPVideoCutViewController.m */; };
+		01CAB4FF19AE35AD00BF1D4E /* MPGLProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CAB4FB19AE35AD00BF1D4E /* MPGLProgram.m */; };
+		01CAB50019AE35AD00BF1D4E /* MPLinearVideoEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 01CAB4FD19AE35AD00BF1D4E /* MPLinearVideoEffect.m */; };
+		01CAC8AF19A782C1009871A9 /* MediaForMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01CAC8AE19A782C1009871A9 /* MediaForMobile.framework */; };
+		01D96E1419388B3E001B8011 /* MPTranscoderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D96E1319388B3E001B8011 /* MPTranscoderViewController.m */; };
+		01ED7A7F19B4D22100FBC4D8 /* MPVideoLibraryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 01ED7A7E19B4D22100FBC4D8 /* MPVideoLibraryCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		011AC20119B660E900B0A6AD /* SampleStoryboard_ipad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SampleStoryboard_ipad.storyboard; path = ../SampleStoryboard_ipad.storyboard; sourceTree = "<group>"; };
+		0135304519ADFEB8002BE756 /* MPEffectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPEffectsViewController.h; path = MPEffectsViewController.h; sourceTree = "<group>"; };
+		0135304619ADFEB8002BE756 /* MPEffectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPEffectsViewController.m; path = MPEffectsViewController.m; sourceTree = "<group>"; };
+		0162E7B8193771A600745653 /* INDE Samples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "INDE Samples.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0162E7BB193771A600745653 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0162E7BD193771A600745653 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0162E7BF193771A600745653 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0162E7C3193771A600745653 /* Samples-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Samples-Info.plist"; sourceTree = "<group>"; };
+		0162E7C5193771A600745653 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0162E7C7193771A600745653 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0162E7C9193771A600745653 /* Samples-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Samples-Prefix.pch"; sourceTree = "<group>"; };
+		0162E7CA193771A600745653 /* MPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MPAppDelegate.h; sourceTree = "<group>"; };
+		0162E7CB193771A600745653 /* MPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MPAppDelegate.m; sourceTree = "<group>"; };
+		0162E7CD193771A600745653 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0162E7EA1937748300745653 /* SampleStoryboard_iphone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SampleStoryboard_iphone.storyboard; path = ../SampleStoryboard_iphone.storyboard; sourceTree = "<group>"; };
+		0167A8C619AFAA93004E1409 /* MPSampleBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPSampleBaseViewController.h; path = MPSampleBaseViewController.h; sourceTree = "<group>"; };
+		0167A8C719AFAA93004E1409 /* MPSampleBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPSampleBaseViewController.m; path = MPSampleBaseViewController.m; sourceTree = "<group>"; };
+		0179FEB119B4AC5300DA2643 /* MPVideoLibraryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPVideoLibraryViewController.h; path = utils/MPVideoLibraryViewController.h; sourceTree = "<group>"; };
+		0179FEB219B4AC5300DA2643 /* MPVideoLibraryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPVideoLibraryViewController.m; path = utils/MPVideoLibraryViewController.m; sourceTree = "<group>"; };
+		0189500E1940E26D00DC84CD /* MPJoinMovieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPJoinMovieViewController.h; sourceTree = "<group>"; };
+		0189500F1940E26D00DC84CD /* MPJoinMovieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPJoinMovieViewController.m; sourceTree = "<group>"; };
+		01A11E5C19B0AB0700267788 /* MPPickerUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPPickerUtil.h; path = utils/MPPickerUtil.h; sourceTree = "<group>"; };
+		01A11E5D19B0AB0700267788 /* MPPickerUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPPickerUtil.m; path = utils/MPPickerUtil.m; sourceTree = "<group>"; };
+		01C57121195AD248003810FC /* MPVideoCutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPVideoCutViewController.h; sourceTree = "<group>"; };
+		01C57122195AD248003810FC /* MPVideoCutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPVideoCutViewController.m; sourceTree = "<group>"; };
+		01CAB4FA19AE35AD00BF1D4E /* MPGLProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPGLProgram.h; path = utils/MPGLProgram.h; sourceTree = "<group>"; };
+		01CAB4FB19AE35AD00BF1D4E /* MPGLProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPGLProgram.m; path = utils/MPGLProgram.m; sourceTree = "<group>"; };
+		01CAB4FC19AE35AD00BF1D4E /* MPLinearVideoEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPLinearVideoEffect.h; path = utils/MPLinearVideoEffect.h; sourceTree = "<group>"; };
+		01CAB4FD19AE35AD00BF1D4E /* MPLinearVideoEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPLinearVideoEffect.m; path = utils/MPLinearVideoEffect.m; sourceTree = "<group>"; };
+		01CAC8AE19A782C1009871A9 /* MediaForMobile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaForMobile.framework; path = "../_build/MediaPack/Build/Products/Release-framework/MediaForMobile.framework"; sourceTree = "<group>"; };
+		01D96E1219388B3E001B8011 /* MPTranscoderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPTranscoderViewController.h; sourceTree = "<group>"; };
+		01D96E1319388B3E001B8011 /* MPTranscoderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPTranscoderViewController.m; sourceTree = "<group>"; };
+		01ED7A7D19B4D22100FBC4D8 /* MPVideoLibraryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MPVideoLibraryCell.h; path = utils/MPVideoLibraryCell.h; sourceTree = "<group>"; };
+		01ED7A7E19B4D22100FBC4D8 /* MPVideoLibraryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MPVideoLibraryCell.m; path = utils/MPVideoLibraryCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0162E7B5193771A600745653 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0162E7BE193771A600745653 /* CoreGraphics.framework in Frameworks */,
+				0162E7C0193771A600745653 /* UIKit.framework in Frameworks */,
+				0162E7BC193771A600745653 /* Foundation.framework in Frameworks */,
+				01CAC8AF19A782C1009871A9 /* MediaForMobile.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0162E7AF193771A600745653 = {
+			isa = PBXGroup;
+			children = (
+				0162E7C1193771A600745653 /* Samples */,
+				0162E7BA193771A600745653 /* Frameworks */,
+				0162E7B9193771A600745653 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0162E7B9193771A600745653 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0162E7B8193771A600745653 /* INDE Samples.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0162E7BA193771A600745653 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01CAC8AE19A782C1009871A9 /* MediaForMobile.framework */,
+				0162E7BB193771A600745653 /* Foundation.framework */,
+				0162E7BD193771A600745653 /* CoreGraphics.framework */,
+				0162E7BF193771A600745653 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0162E7C1193771A600745653 /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				0167A8C619AFAA93004E1409 /* MPSampleBaseViewController.h */,
+				0167A8C719AFAA93004E1409 /* MPSampleBaseViewController.m */,
+				0135304519ADFEB8002BE756 /* MPEffectsViewController.h */,
+				0135304619ADFEB8002BE756 /* MPEffectsViewController.m */,
+				01C57121195AD248003810FC /* MPVideoCutViewController.h */,
+				01C57122195AD248003810FC /* MPVideoCutViewController.m */,
+				01D96E1219388B3E001B8011 /* MPTranscoderViewController.h */,
+				01D96E1319388B3E001B8011 /* MPTranscoderViewController.m */,
+				0189500E1940E26D00DC84CD /* MPJoinMovieViewController.h */,
+				0189500F1940E26D00DC84CD /* MPJoinMovieViewController.m */,
+				0162E7EA1937748300745653 /* SampleStoryboard_iphone.storyboard */,
+				011AC20119B660E900B0A6AD /* SampleStoryboard_ipad.storyboard */,
+				0162E7CD193771A600745653 /* Images.xcassets */,
+				01CAB50119AE362900BF1D4E /* utils */,
+				0162E7C2193771A600745653 /* Supporting Files */,
+			);
+			path = Samples;
+			sourceTree = "<group>";
+		};
+		0162E7C2193771A600745653 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0162E7C3193771A600745653 /* Samples-Info.plist */,
+				0162E7C4193771A600745653 /* InfoPlist.strings */,
+				0162E7C7193771A600745653 /* main.m */,
+				0162E7C9193771A600745653 /* Samples-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0179FEB019B4ABCE00DA2643 /* FilePicker */ = {
+			isa = PBXGroup;
+			children = (
+				0179FEB119B4AC5300DA2643 /* MPVideoLibraryViewController.h */,
+				0179FEB219B4AC5300DA2643 /* MPVideoLibraryViewController.m */,
+				01ED7A7D19B4D22100FBC4D8 /* MPVideoLibraryCell.h */,
+				01ED7A7E19B4D22100FBC4D8 /* MPVideoLibraryCell.m */,
+			);
+			name = FilePicker;
+			sourceTree = "<group>";
+		};
+		01CAB50119AE362900BF1D4E /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				0179FEB019B4ABCE00DA2643 /* FilePicker */,
+				01A11E5C19B0AB0700267788 /* MPPickerUtil.h */,
+				01A11E5D19B0AB0700267788 /* MPPickerUtil.m */,
+				0162E7CA193771A600745653 /* MPAppDelegate.h */,
+				0162E7CB193771A600745653 /* MPAppDelegate.m */,
+				01CAB4FC19AE35AD00BF1D4E /* MPLinearVideoEffect.h */,
+				01CAB4FD19AE35AD00BF1D4E /* MPLinearVideoEffect.m */,
+				01CAB4FA19AE35AD00BF1D4E /* MPGLProgram.h */,
+				01CAB4FB19AE35AD00BF1D4E /* MPGLProgram.m */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0162E7B7193771A600745653 /* INDE Samples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0162E7E4193771A600745653 /* Build configuration list for PBXNativeTarget "INDE Samples" */;
+			buildPhases = (
+				0162E7B4193771A600745653 /* Sources */,
+				0162E7B5193771A600745653 /* Frameworks */,
+				0162E7B6193771A600745653 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "INDE Samples";
+			productName = Samples;
+			productReference = 0162E7B8193771A600745653 /* INDE Samples.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0162E7B0193771A600745653 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MP;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Intel Corporation";
+			};
+			buildConfigurationList = 0162E7B3193771A600745653 /* Build configuration list for PBXProject "Samples" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0162E7AF193771A600745653;
+			productRefGroup = 0162E7B9193771A600745653 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0162E7B7193771A600745653 /* INDE Samples */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0162E7B6193771A600745653 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0162E7C6193771A600745653 /* InfoPlist.strings in Resources */,
+				0162E7EB1937748300745653 /* SampleStoryboard_iphone.storyboard in Resources */,
+				011AC20219B660E900B0A6AD /* SampleStoryboard_ipad.storyboard in Resources */,
+				0162E7CE193771A600745653 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0162E7B4193771A600745653 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0167A8C819AFAA93004E1409 /* MPSampleBaseViewController.m in Sources */,
+				0179FEB319B4AC5300DA2643 /* MPVideoLibraryViewController.m in Sources */,
+				01CAB4FF19AE35AD00BF1D4E /* MPGLProgram.m in Sources */,
+				01A11E5E19B0AB0700267788 /* MPPickerUtil.m in Sources */,
+				01C57123195AD248003810FC /* MPVideoCutViewController.m in Sources */,
+				01CAB50019AE35AD00BF1D4E /* MPLinearVideoEffect.m in Sources */,
+				0162E7C8193771A600745653 /* main.m in Sources */,
+				018950101940E26D00DC84CD /* MPJoinMovieViewController.m in Sources */,
+				0135304719ADFEB8002BE756 /* MPEffectsViewController.m in Sources */,
+				0162E7CC193771A600745653 /* MPAppDelegate.m in Sources */,
+				01D96E1419388B3E001B8011 /* MPTranscoderViewController.m in Sources */,
+				01ED7A7F19B4D22100FBC4D8 /* MPVideoLibraryCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0162E7C4193771A600745653 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0162E7C5193771A600745653 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0162E7E2193771A600745653 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0162E7E3193771A600745653 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0162E7E5193771A600745653 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../_build/MediaPack/Build/Products/Release-framework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Samples/Samples-Prefix.pch";
+				INFOPLIST_FILE = "Samples/Samples-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0162E7E6193771A600745653 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/../_build/MediaPack/Build/Products/Release-framework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Samples/Samples-Prefix.pch";
+				INFOPLIST_FILE = "Samples/Samples-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0162E7B3193771A600745653 /* Build configuration list for PBXProject "Samples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0162E7E2193771A600745653 /* Debug */,
+				0162E7E3193771A600745653 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0162E7E4193771A600745653 /* Build configuration list for PBXNativeTarget "INDE Samples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0162E7E5193771A600745653 /* Debug */,
+				0162E7E6193771A600745653 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0162E7B0193771A600745653 /* Project object */;
+}
